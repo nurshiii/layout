@@ -9,13 +9,9 @@ import {
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
-
+import Gallery from './pages/Gallery';
 import Home from './pages/Home';
-import Profile from './pages/Profile';
-import Users from './pages/Users';
 import Navbar from './components/Navbar';
-import AppContext from "./context/ApplicationContex";
-import ContextConsumer from "./components/ContextConsumer";
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -44,22 +40,14 @@ function App() {
                 <Home/>
               </Layout>
             </Route>
-            <Route path="/profile">
+            <Route path="/gallery">
               <Layout>
-                <Profile/>
-              </Layout>
-            </Route>
-            <Route path="/users">
-              <Layout>
-                <Users/>
+                <Gallery/>
               </Layout>
             </Route>
           </Switch>
         </Router>
       </Provider>
-      <AppContext.ApplicationContextProvider> 
-        <ContextConsumer />
-      </AppContext.ApplicationContextProvider>
     </>
   );
 }
