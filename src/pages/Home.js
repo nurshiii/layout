@@ -1,6 +1,8 @@
 import React from 'react';
 import PromoContainer from '../components/promo-banner/PromoContainer';
 import Button from '../components/Button';
+import Iconlist from '../components/Iconlist';
+import Sportlist from '../components/Sportlist';
 
 class Home extends React.Component {
 
@@ -16,6 +18,17 @@ class Home extends React.Component {
         <div className="row">
             <div className="col">
                 <PromoContainer/>
+            </div>
+        </div>
+        <div className="row">
+            <div className="col">
+                <Iconlist/>
+            </div>
+        </div>
+        
+        <div className="row">
+            <div className="col">
+                <Sportlist/>
             </div>
         </div>
     </>
