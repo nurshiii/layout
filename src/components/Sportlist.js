@@ -5,18 +5,26 @@ const Sportlist = props => {
 
     return <>
     
-   <div class="position-relative">
-  <a href="#" class="stretched-link"><div class="category-bar__CategoryLabel-sc-1hi82c0-4 fzXeaD">Soccer</div></a>
-</div>
-<div class="position-relative">
-  <a href="#" class="stretched-link"><div class="category-bar__CategoryLabel-sc-1hi82c0-4 fzXeaD">eSoccer</div></a>
-</div>
-<div class="position-relative">
-  <a href="#" class="stretched-link"><div class="category-bar__CategoryLabel-sc-1hi82c0-4 fzXeaD">eNBA</div></a>
-</div>
-<p class="text-decoration-none">This text is not decorated</p>
-<p class="text-decoration-none">This text is not decorated</p>
+    
+    <nav class="nav">
+  <a class="nav-link" href="#!">Soccer</a>
+  <a class="nav-link" href="#!">eSoccer</a>
+  <a class="nav-link" href="#!">eNBA</a>
+  <a class="nav-link" href="#!">Baseball</a>
+  <a class="nav-link" href="#!">Table Tennis</a>
+  <a class="nav-link" href="#!">TT Setka Cup</a>
+  <a class="nav-link" href="#!">SetTennis</a>
+  <a class="nav-link" href="#!">Tennis</a>
+  <a class="nav-link" href="#!">Basketball</a>
+  <a class="nav-link" href="#!">CS:GO</a>
+  <a class="nav-link" href="#!">Data 2</a>
+  <a class="nav-link" href="#!">LOL</a>
+  <a class="nav-link" href="#!">Call of Duty</a>
+  
+</nav>
       
     </>
+    
 }
+
 export default Sportlist
